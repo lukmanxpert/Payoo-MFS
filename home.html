@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-1">
+                    <div class="pt-16">
+                        <div class="stats shadow">
+                            <div class="stat text-center">
+                                <div class="stat-value" id="current-balance">500</div>
+                                <div class="stat-title">Available Balance</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div>
+                        <button type="submit" class="btn">Add Money</button>
+                        <button type="submit" class="btn">Cash Out</button>
+                    </div>
+                    <div class="divider"></div>
+                    <div>
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount</span>
+                                </label>
+                                <input type="text" id="to-add-balance" placeholder="Amount" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input type="password" id="given-pin" placeholder="Pin" class="input input-bordered" required />
+                                <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover">Forgot Pin?</a>
+                                </label>
+                            </div>
+                            <div class="form-control">
+                                <button class="btn btn-primary" id="add-money-btn">Add Money</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js files -->
+     <script src="./js/addMoney.js"></script>
+</body>
+
+</html>
